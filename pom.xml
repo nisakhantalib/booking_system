@@ -22,12 +22,12 @@
     </properties>
 
     <dependencies>
-        <!-- Your existing dependencies remain the same -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!--in-memory db used for testing, DataJpaTest automatically uses H2 -->
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>

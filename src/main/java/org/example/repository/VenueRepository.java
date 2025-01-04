@@ -9,4 +9,5 @@ import java.util.List;
 @Repository
 public interface VenueRepository extends JpaRepository<Venue, Long> {
     List<Venue> findByCapacityGreaterThanEqual(Integer capacity);
+
 }
