@@ -1,13 +1,16 @@
 package org.example.service;
 
+
 import lombok.RequiredArgsConstructor;
 import org.example.entity.Venue;
 import org.example.repository.VenueRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 @Service
+@Transactional
 @RequiredArgsConstructor
 public class VenueService {
     private final VenueRepository venueRepository;

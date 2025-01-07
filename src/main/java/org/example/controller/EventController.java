@@ -19,7 +19,7 @@ import java.util.List;
 
  this controller handles all HTTP requests related to Events (CRUD operations).
  */
-@RestController
+@RestController // for API endpoints
 @RequestMapping("/api/events")
 @RequiredArgsConstructor
 public class EventController {

@@ -1,5 +1,6 @@
 package org.example.service;
 
+import org.springframework.transaction.annotation.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.example.entity.Event;
 import org.example.repository.EventRepository;
@@ -18,6 +19,7 @@ import java.util.List;
  * handling business logic and data validation.
  */
 @Service
+@Transactional
 @RequiredArgsConstructor
 public class EventService {
 
@@ -68,6 +70,8 @@ public class EventService {
      * @return the updated event
      * @throws RuntimeException if the event is not found
      */
+
+    @Transactional
     public Event updateEvent(Long id, Event event) {
         // first check if the event exists
         Event existingEvent = getEventById(id);
