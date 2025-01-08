@@ -4,26 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1b8fc65-4d80-43d2-bec0-8f5aea887beb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/EventViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/VenueViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/events/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/events/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/events/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/venues/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/venues/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/venues/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/EventController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/EventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/EventService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/VenueService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/VenueService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    <list default="true" id="d1b8fc65-4d80-43d2-bec0-8f5aea887beb" name="Changes" comment="Added front-end files">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/events/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/events/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/venues/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/venues/list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -52,6 +40,9 @@
     "accountId": "021ccdef-6a64-4deb-9895-b406fc51bf14"
   }
 }]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
@@ -109,6 +100,23 @@
       <option name="presentableId" value="Default" />
       <updated>1736267238202</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added front-end files">
+      <option name="closed" value="true" />
+      <created>1736277533036</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1736277533036</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added front-end files">
+      <option name="closed" value="true" />
+      <created>1736277574107</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1736277574107</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -137,5 +145,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added front-end files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added front-end files" />
   </component>
 </project>

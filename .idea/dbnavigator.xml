@@ -24,10 +24,7 @@
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="1ca4839c-a811-471c-b5de-8b143e5b9b10" object-ref="schemas/booking_system_db/tables/events" />
-      <object connection-id="1ca4839c-a811-471c-b5de-8b143e5b9b10" object-ref="schemas/booking_system_db/tables/venues" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="1ca4839c-a811-471c-b5de-8b143e5b9b10" />
