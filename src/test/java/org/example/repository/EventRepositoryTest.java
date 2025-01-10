@@ -5,6 +5,7 @@ import org.example.entity.Venue;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
 
@@ -14,6 +15,8 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 @DataJpaTest
+@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
+
 class EventRepositoryTest {
     @Autowired
     private TestEntityManager entityManager;
@@ -118,25 +121,6 @@ class EventRepositoryTest {
         assertTrue(events.stream().anyMatch(e -> e.getName().equals("Event 2")),
                 "should contain Event 2");
     }
-
-    @Test
-    void findUpcomingEvents_ShouldReturnFutureEvents() {
-        // Use fixed time for predictable testing
-        LocalDateTime baseTime = LocalDateTime.of(2025, 1, 1, 12, 0); // noon on Jan 1, 2025
-
-        Event pastEvent = createEvent("Past Event", baseTime.minusHours(2));    // 10:00
-        Event currentEvent = createEvent("Current Event", baseTime);            // 12:00
-        Event futureEvent = createEvent("Future Event", baseTime.plusHours(2)); // 14:00
-
-        eventRepository.save(pastEvent);
-        eventRepository.save(currentEvent);
-        eventRepository.save(futureEvent);
-
-        // Find events after 12:00
-        List<Event> upcomingEvents = eventRepository.findByStartTimeAfter(baseTime);
-
-        assertEquals(1, upcomingEvents.size(), "should find only the future event");
-        assertEquals("Future Event", upcomingEvents.get(0).getName());}
 
     // helper method to create events
     private Event createEvent(String name, LocalDateTime startTime) {

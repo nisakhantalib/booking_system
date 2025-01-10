@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1b8fc65-4d80-43d2-bec0-8f5aea887beb" name="Changes" comment="Added front-end files">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+    <list default="true" id="d1b8fc65-4d80-43d2-bec0-8f5aea887beb" name="Changes" comment="Homepage added for better navigation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/events/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/events/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/venues/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/venues/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/repository/EventRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/repository/EventRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/repository/VenueRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/repository/VenueRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +53,12 @@
   "keyToString": {
     "Application.EventApplication.executor": "Run",
     "DefaultHtmlFileTemplate": "HTML File",
+    "JUnit.All in demo (1).executor": "Run",
+    "JUnit.All in demo (2).executor": "Run",
+    "JUnit.All in demo.executor": "Run",
+    "JUnit.EventRepositoryTest.findByVenueId_ShouldReturnEvents.executor": "Run",
+    "JUnit.VenueRepositoryTest.executor": "Run",
+    "JUnit.repository in demo.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -71,7 +74,7 @@
       <recent name="C:\Users\acer\Desktop\booking_system\src\main\resources\templates\venues" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.EventApplication">
     <configuration name="EventApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.EventApplication" />
       <module name="demo" />
@@ -85,9 +88,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in demo (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in demo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VenueRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.repository" />
+      <option name="MAIN_CLASS_NAME" value="org.example.repository.VenueRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="repository in demo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/org/example/repository" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.EventApplication" />
+        <item itemvalue="JUnit.All in demo" />
+        <item itemvalue="JUnit.All in demo (2)" />
+        <item itemvalue="JUnit.repository in demo" />
+        <item itemvalue="JUnit.VenueRepositoryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -116,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736277574107</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Homepage added for better navigation">
+      <option name="closed" value="true" />
+      <created>1736323128187</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1736323128187</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,6 +202,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added front-end files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added front-end files" />
+    <MESSAGE value="Homepage added for better navigation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homepage added for better navigation" />
   </component>
 </project>

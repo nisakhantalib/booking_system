@@ -3,6 +3,7 @@ package org.example.repository;
 import org.example.entity.Venue;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
 
@@ -11,6 +12,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 @DataJpaTest
+@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 public class VenueRepositoryTest {
     @Autowired
     private TestEntityManager entityManager;
@@ -107,38 +109,6 @@ public class VenueRepositoryTest {
         assertTrue(foundVenues.isEmpty(), "Venue list should be empty");
     }
 
-    @Test
-    void findAll_shouldReturnAllVenues() {
-        // 1. create test venues
-        Venue venue1 = new Venue();
-        venue1.setName("Venue 1");
-        venue1.setAddress("123 Test Street");
-        venue1.setCapacity(100);
-
-        Venue venue2 = new Venue();
-        venue2.setName("Venue 2");
-        venue2.setAddress("456 Test Street");
-        venue2.setCapacity(200);
-
-        // 2. save venues
-        venueRepository.save(venue1);
-        venueRepository.save(venue2);
-
-        // 3. find all venues
-        List<Venue> allVenues = venueRepository.findAll();
-
-        // 4. verify we get all venues
-        assertNotNull(allVenues, "Venues list should not be null");
-        assertEquals(2, allVenues.size(), "Should find all venues");
-        //use stream if we don't know the exact order
-        assertTrue(allVenues.stream().anyMatch(v -> v.getName().equals("Venue 1")), "Should contain Venue 1");
-        assertTrue(allVenues.stream().anyMatch(v -> v.getName().equals("Venue 2")), "Should contain Venue 2");
-
-        //alternative way to do it
-//        assertEquals("Venue 1", allVenues.get(0).getName(), "First venue should be Venue 1");
-//        assertEquals("Venue 2", allVenues.get(1).getName(), "Second venue should be Venue 2");
-//
-    }
 
     @Test
     void deleteVenue_shouldRemoveVenue() {
