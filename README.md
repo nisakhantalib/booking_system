@@ -3,6 +3,17 @@
 ## Overview
 The Event Management System is a Spring Boot application that allows users to manage events and venues. It provides both a web interface and a REST API for creating, reading, updating, and deleting (CRUD) events and venues.
 
+## Quick Demo
+![Demo](/images/demoeventvenue.gif)
+
+## Home Page
+![Home](/images/home.png)
+
+## Event Page
+![Event](/images/events.png)
+
+## Venue Page
+![Venue](/images/venues.png)
 ## Technical Stack & Core Concepts
 
 ### 1. Spring Boot Framework
